@@ -6,4 +6,4 @@ local uv = vim.loop
 keymap.set({"n", "x"}, ";", ":")
 
 -- remap escape to j j
-keymap.set("i", {"j", "j"}, "<esc>")
+keymap.set("i", "jj", "<esc>")
