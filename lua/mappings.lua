@@ -7,3 +7,6 @@ keymap.set({"n", "x"}, ";", ":")
 
 -- remap escape to j j
 keymap.set("i", "jj", "<esc>")
+
+-- clear search highlight
+keymap.set("n", "<leader><space>", ":noh<CR>", {silent = true})
