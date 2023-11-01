@@ -125,6 +125,12 @@ set tildeop
 set synmaxcol=250  " Text after this column number is not highlighted
 set nostartofline
 
+" External program to use for grep command
+if executable('rg')
+  set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
+  set grepformat=%f:%l:%c:%m
+endif
+
 " Enable true color support. Do not set this option if your terminal does not
 " support true colors! For a comprehensive list of terminals supporting true
 " colors, see https://github.com/termstandard/colors and https://gist.github.com/XVilka/8346728.
